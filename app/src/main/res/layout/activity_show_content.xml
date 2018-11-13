@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        android:elevation="8dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash"
+            android:layout_margin=".5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Description"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Braun watch is a reissue of the original 1970's design from renowned design team Dietrich Lubs and Dieter Rams, both of whom have work featured in the Museum’s collection. The large watch features a numbered face, and the smaller watch has only index lines. Made of a matte stainless-steel case, black dial, mineral glass, a three-hand quartz movement, and a leather band. Water-resistant."
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/Cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_margin="10dp"
+        android:fontFamily="monospace"
+        android:text="$ 160.00"
+        android:textColor="@android:color/black"
+
+        android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Book_Now"
+            android:layout_below="@+id/Cost"
+            android:layout_width="248dp"
+            android:layout_height="42dp"
+            android:background="#E95437"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="Book Now"
+            android:textColor="@android:color/white"
+            android:layout_margin="15dp"
+            android:elevation="4dp"
+            />
+
+    <Button
+        android:id="@+id/Call"
+        android:layout_below="@+id/Book_Now"
+        android:layout_width="248dp"
+        android:layout_height="42dp"
+        android:background="#E95437"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:onClick="call"
+        android:text="Call Now"
+        android:textColor="@android:color/white"
+        android:layout_margin="15dp"
+        android:elevation="4dp"
+
+        />
+
+        </RelativeLayout>
+</ScrollView>
